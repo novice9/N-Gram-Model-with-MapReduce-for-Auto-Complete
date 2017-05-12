@@ -5,9 +5,9 @@ How to run Hadoop MapReduce:
 
  1. Upload input files into hadoop file system:
     
-    $ hdfs dfs -mkdir input/
+    $ hdfs fs -mkdir input/
     
-    $ hdfs dfs -put *.txt /input/
+    $ hdfs fs -put *.txt /input/
     
  2. Generate jar file from your java mapReduce program
     
@@ -21,4 +21,4 @@ How to run Hadoop MapReduce:
  
  4. Check the result from MapReduce
  
-    $ hdfs dfs -cat /output/part-r-00000
+    $ hdfs fs -cat /output/part-r-00000
