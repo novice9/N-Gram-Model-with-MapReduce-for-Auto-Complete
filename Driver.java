@@ -32,12 +32,12 @@ public class Driver {
 		
 		jobBuild.setInputFormatClass(TextInputFormat.class);
 		jobBuild.setOutputFormatClass(TextOutputFormat.class);
-	
-        Path inputPath = new Path(args[0]);
-        Path outputPath = new Path(args[1]);
+		
+		Path inputPath = new Path(args[0]);
+		Path outputPath = new Path(args[1]);
 
 		FileSystem hdfsBuild = FileSystem.get(URI.create("hdfs://hadoop-master:9000"), confBuild);
-        if (hdfsBuild.exists(outputPath))
+		if (hdfsBuild.exists(outputPath))
         	hdfsBuild.delete(outputPath, true);
         
 		TextInputFormat.setInputPaths(jobBuild, inputPath);
