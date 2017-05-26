@@ -7,12 +7,12 @@ Wiki articles are collected by a 5-thread web crawler, and sit in ./data
 
 Source Code:
 
-source code are placed in the ./src folder, this program include 2 MapReduce jobs.
+This program include 2 MapReduce jobs: NGramBuild and ModelCreate
 The first job builds n-gram library from wiki articles, and the second job create the language model from n-gram library.
 
 DataBase:
 
-The model is stores into MySQL database "langMode.ngram", the schema is decribed in ./db/schema.ini
+The model is stores into MySQL database "langMode.ngram", the schema is decribed in ./schema.ini
 
 --------------------------------------------------
 How to run Hadoop MapReduce:
