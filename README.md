@@ -33,7 +33,7 @@ How to run Hadoop MapReduce:
   
     $ hadoop jar autoComp.jar Driver /input /library 4 10 10
     
-    arguments:
+    Explanation of Arguments:
     
         input : raw data; library : N Gram library
         
