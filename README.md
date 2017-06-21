@@ -34,11 +34,14 @@ How to run Hadoop MapReduce:
     $ hadoop jar autoComp.jar Driver /input /library 4 10 10
     
     arguments:
-        input : raw data
-        library : N Gram library
+    
+        input : raw data; library : N Gram library
+        
         4 : the value for N in N Gram
-        10 : threshold for frequent phrase
-        10 : only recode top 10 followers
+        
+        10 : threshold to filter out infrequent phrase
+        
+        10 : only record the top 10 followers
 
  4. Check the result from MapReduce
  
